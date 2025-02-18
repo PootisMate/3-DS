@@ -6,10 +6,10 @@ class Personagem:
         self.velocidade = velocidade
         self.mana = mana
         self.carisma = carisma
-
     def socar(self, adversario):
         if self.hp <= 0:
             print(f"{self.nome} Não pode atacar, você está sem pontos de vida")
             return
         dano = self.forca
-        oponente.vida
+        adversario.vida -= dano
+        print(f"{self.nome} deu um socão")
