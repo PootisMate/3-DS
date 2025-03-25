@@ -1,46 +1,54 @@
-let sede = true
-let copos = 0
-while(sede==true){
-  copos=copos+1
-  console.log("Bebendo copo de água:", copos)
-  if(copos ==3){
-    sede=false
-  } 
-}
-
-let fome = true
-let pedaços = 0
-do{
-  pedaços = pedaços + 1
-  console.log("Comendo pedaço de bolo:", pedaços)
-  if(pedaços>0){
-    fome = false
-  }
-}while(fome==true)
-
 /*1*/
-let nome = ['Joaquim', 'Rafael', 'Luiz', 'Tomas']
-let maior = ''
-for(let ini=0;ini<nome.length;ini++){
-  if (nome[ini].length>maior){
-    maior = nome[ini]
-  }
+
+function operacao(a, b, callback){
+  callback(a, b)
 }
-  console.log(nome)
-  
+
+function soma(a, b){
+  console.log("A soma é: ", a+b)
+}
+function subtracao(a, b){
+  console.log("A subtração é: ", a-b)
+}
+function multiplicacao(a, b){
+  console.log("A multiplicação é: ", a*b)
+}
+function divisao(a, b){
+  console.log("A divisão é: ", a/b)
+}
+operacao(15, 30, soma)
+operacao(15, 30, subtracao)
+operacao(15, 30, multiplicacao)
+operacao(15, 30, divisao)
+
 /*2*/
-let nota = [3,9,6]
-let ni = []
-for(let nota of notas)
-  let media = (nota / nota.length)
-console.log('Sua média é', media)
+
+let programas = ["Javascript", "Python", "C++"]
+
+programas.forEach(elemento =>{
+  console.log("Eu gosto de ", elemento)
+})
 
 /*3*/
-let dezena = true
-let numero = 11
-while(dezena==true){
-  numero = numero - 1
-  console.log(numero)
-  if(numero ==1){
-    dezena=false }}
-    
+
+let numeros = [5, 10, 15, 20]
+
+numeros.forEach(Element =>{
+  console.log(5+10+15+20)
+})
+
+/*4*/
+
+let idades = [10, 15, 18, 21, 25]
+let maiorDeIdade = idades.map(ano=>ano>=18)
+console.log(maiorDeIdade)
+
+/*5*/
+let celsius = [0, 20, 30, 40]
+let farenheit = celsius.map(temp => temp*1,8+32)
+console.log(farenheit)
+/*6*/
+
+let precos = [100, 200, 300]
+let desconto = precos.map(preco => preco*0.1)
+console.log(desconto)
