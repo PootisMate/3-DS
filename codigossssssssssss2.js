@@ -58,22 +58,22 @@ console.log(desconto)
 
 /*1*/
 let aluno = {
-  gênero : "feminino",
-  nome : "Lunna D`Mello",
-  série : "3°D.S-B"
+  gênero : "masculino",
+  nome : "Pootis de la Mate",
+  série : "3°DS B"
 };
 console.log(aluno);
 
 /*2*/
 
 let carro = {
-  marca: "Toyota",
-  modelo: "Corolla",
-  ano: 2020
+  marca: "BYD",
+  modelo: "Dolphin",
+  ano: 2015
 };
 
-carro.cor = "Prata";
-carro.ano = 2022;
+carro.cor = "Preto";
+carro.ano = 2018;
 
 console.log(carro);
 
@@ -81,8 +81,8 @@ console.log(carro);
 
 let produto = {
   nome: "Celular",
-  preco: 1500,
-  estoque: 20
+  preco: 1800,
+  estoque: 25
 };
 
 delete produto.estoque;
@@ -92,11 +92,11 @@ console.log(produto);
 /*4*/
 
 let pessoa = {
-  nome : "Jungkook",
+  nome : "Konkey Dong",
   idade : 27,
 
   apresentar(){
-    console.log(`Olá, sou ${this.nome} e tenho ${this.idade} anos`);
+    console.log(`Uhhuuhuuuhuuu, suu ${this.nome} e tenhu ${this.idade} anuus`);
   }
 };
 
@@ -117,9 +117,9 @@ for(let chave in filme){
 /*6*/
 
 let turma = [
-  { nome: "Carlos", idade: 18, nota: 7.5 },
-  { nome: "Beatriz", idade: 20, nota: 9.0 },
-  { nome: "Lucas", idade: 19, nota: 8.2 }
+  { nome: "Carlinhos", idade: 10, nota: 5.2 },
+  { nome: "Reboleca", idade: 37, nota: 3.0 },
+  { nome: "LucasArcano.2009 enjoyer", idade: 26, nota: 9.2 }
 ];
 
 turma.forEach(aluno => console.log(aluno.nota));
@@ -127,8 +127,8 @@ turma.forEach(aluno => console.log(aluno.nota));
 /*7*/
 
 let contaBancária = {
-  titular: "José",
-  saldo: 4000,
+  titular: "Spiff",
+  saldo: 7000,
  
   depositar(valor){
     this.saldo += valor;
