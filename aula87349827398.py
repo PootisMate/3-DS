@@ -5,7 +5,7 @@ palavras = ["barco", "paralelo", "caçamba", "iogurte"]
 palavra_oculta = list(random.choice(palavras))
 tamanho_palavra = len(palavra_oculta)
 chances = 10
-
+posicoes = []
 display = []
 for _ in range(tamanho_palavra):
     display += "_"
@@ -22,14 +22,12 @@ while continuar:
                 print("Letra encontrada na posição: " + str(i))
                 posicoes.append(i)
 
-    if letra not in palavra_oculta:
-
         for i in range(len(posicoes)):
             palavra_oculta[posicoes[i]] = letra
 
-        print(palavra_oculta)
+        print(display)
         posicoes.clear()
 
-        if palavra_oculta == list(palavra):
-            print("Você acertou!")
-            continuar = False;
+if display == list(palavra_oculta):
+    print("Você acertou!")
+    continuar = False;
