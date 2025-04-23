@@ -1,3 +1,4 @@
+import random
 atividade = int(input("Escolha qual atividade você quer olhar."))
 
 #1#
@@ -49,3 +50,34 @@ if atividade == 5:
     print('Essa pessoa é um adulto')
  else:
     print('Essa pessoa é um adolescênte')
+
+#6#
+if atividade == 6:
+ for i in range(1, 21):
+  print(i)
+
+#7#
+if atividade == 7:
+ senha_acesso = "1234"
+
+ while True:
+  senha = input("Digite a senha: ")
+  if senha == senha_acesso:
+   print("Acesso liberado.")
+   break
+  else:
+   print("Acesso negado, tente novamente.")
+
+#8#
+if atividade == 8:
+ nomes = []
+
+ for i in range(5):
+   nome = input(f"Digite o {i+1}° nome: ")
+   nomes.append(nome)
+
+ print("Nomes digitados: ", nomes)
+
+#9#
+if atividade == 9:
+ palavras = ["abacate", "mongoloide", "porteiro", "caçamba"]
