@@ -81,3 +81,33 @@ if atividade == 8:
 #9#
 if atividade == 9:
  palavras = ["abacate", "mongoloide", "porteiro", "caçamba"]
+
+ palavra_sorteio = random.choice(palavras)
+ numero_letras = len(palavra_sorteio)
+
+ print("A palavra sorteada foi:", palavra_sorteio)
+ print(f"Ela possui {numero_letras} letras")
+
+ print("As palavras são:")
+ for letra in palavra_sorteio:
+  print(letra)
+#10#
+
+ letra_usuario = input("Digite a letra que você quer saber que está na palavra:")
+
+ if letra_usuario in palavra_sorteio:
+  print("Esta letra está na palavra!")
+ else:
+  print("Esta letra não está nessa palavra.")
+
+#11#
+if atividade == 11:
+ palavra_usuario = input("Qual palavra você escolherá?").lower()
+ vogais = 'aeiou'
+
+ contador_vogais = 0
+ for letra in palavra_usuario:
+   if letra in vogais:
+    contador_vogais = contador_vogais + 1
+
+ print(f"Essa palavra possui {contador_vogais} vogais em {palavra_usuario}.")
