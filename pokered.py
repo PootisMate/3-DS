@@ -67,8 +67,8 @@ while vida_jogador > 0 and vida_computador > 0:
         vida_computador, vida_jogador = atacar(computador, jogador, vida_computador, vida_jogador, defesa_valor)
 
 if vida_jogador <= 0:
-    print("Yveltal Ganhou!")
+    print("Swampert Ganhou!")
 elif vida_computador <= 0:
-    print("Gengar ganhou!")
+    print("Togekiss ganhou!")
 
 print("Fim da batalha")
